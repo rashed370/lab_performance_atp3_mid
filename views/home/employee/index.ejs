@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employees</title>
+    </head>
+    <body>
+        <style>
+        table.list {
+            width: 1024px;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        table.list tr>td {
+            border: 1px solid #000;
+            padding: 5px;
+        }
+        h3 {
+            display: inline;
+        }
+        </style>
+        <h3>Employee List</h3> [ <a href="/home/employee/add">Add New Employee</a> ]
+        <table style="width:1024px">
+            <tr>
+                <td><input style="width:100%" type="text" name="username" placeholder="Username"></td>
+                <td><input style="width:100%" type="text" name="name" placeholder="Name"></td>
+                <td><input style="width:100%" type="text" name="company" placeholder="Company"></td>
+                <td><input style="width:100%" type="text" name="contact" placeholder="Contact No"></td>
+                <td><input style="width:100%" type="submit" value="search"></td>
+            </tr>
+        </table>
+        <table class="list">
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Username</td>
+                    <td>Company</td>
+                    <td>Contact No</td>
+                    <td>Action</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="5">No Resuls Found</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

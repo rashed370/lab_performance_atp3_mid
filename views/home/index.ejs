@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <h3>Wellcome <%= logged.name %></h3>
+        <% if(logged.role=='admin') { %>
+        <a href="/home/employee">Manage Employees</a><br>
+        <% } %>
+        <a href="/home/job">Manage Jobs</a><br>
+        <a href="/home/logout">Logout</a>
+    </body>
+</html>

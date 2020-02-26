@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jobs</title>
+    </head>
+    <body>
+        <style>
+            table.list {
+                width: 1024px;
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+    
+            table.list tr>td {
+                border: 1px solid #000;
+                padding: 5px;
+            }
+            h3 {
+                display: inline;
+            }
+            </style>
+        <h3>Job List</h3>  [ <a href="/home/job/add">Add New Job</a> ]
+        <table style="width:1024px">
+            <tr>
+                <td><input style="width:100%" type="text" name="title" placeholder="Title"></td>
+                <td><input style="width:100%" type="text" name="company" placeholder="Company"></td>
+                <td><input style="width:100%" type="text" name="location" placeholder="Location"></td>
+                <td><input style="width:100%" type="text" name="salary" placeholder="Salary"></td>
+                <td><input style="width:100%" type="submit" value="search"></td>
+            </tr>
+        </table>
+        <table class="list">
+            <thead>
+                <tr>
+                    <td>Title</td>
+                    <td>Company</td>
+                    <td>Location</td>
+                    <td>Salary</td>
+                    <td>Action</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="5">No Results Found</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
